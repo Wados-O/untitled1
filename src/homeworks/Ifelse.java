@@ -10,21 +10,26 @@ import java.io.InputStreamReader;
 public class Ifelse {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(br.readLine());
-        if (a > 0) {
+        System.out.println("Enter the number : ");
+        try {
+            int a = Integer.parseInt(br.readLine());
+            if (a > 0) {
 
-            System.out.println("number is positive ..");
+                System.out.println("number is positive ..");
 
-        } else {
-            System.out.println("number is negative..");
-        }
-        if (a == 0) {
-            System.out.println("number is zero");
-        }
-        if (a % 3 == 0) {
-            System.out.println("number is divisible by three..");
-        } else {
-            System.out.println("number is not divisible by three ..");
+            } else {
+                System.out.println("number is negative..");
+            }
+            if (a == 0) {
+                System.out.println("number is zero");
+            }
+            if (a % 3 == 0) {
+                System.out.println("number is divisible by three..");
+            } else {
+                System.out.println("number is not divisible by three ..");
+            }
+        }catch (NumberFormatException e){
+            System.out.println("Incorrect input :\n" + e.getMessage());
         }
     }
 }
