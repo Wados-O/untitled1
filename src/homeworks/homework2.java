@@ -29,6 +29,11 @@ public class homework2 {
             System.out.println("What's your name? ");
             String name = br.readLine();
 
+            if (name.isEmpty()) {
+                System.out.println("String can't be empty: ");
+                name = br.readLine();
+            }
+
             if (hallo.isEmpty()) {
                 System.out.println("String can't be empty: ");
             }
