@@ -13,7 +13,7 @@ public class homework2 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Hi! How are you ?");
         String hallo = br.readLine();
-        if (hallo.equalsIgnoreCase("fine .. and you?")) {
+        if (hallo.equalsIgnoreCase("fine and you?")) {
             System.out.println("Oh you are so friendly.. ");
         } else {
             System.out.println("okay...");
