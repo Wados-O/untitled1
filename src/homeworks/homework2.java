@@ -58,7 +58,7 @@ public class homework2 {
                 System.out.println("Sorry i gotta go!!! ");
 
             }
-        } catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 

@@ -28,7 +28,7 @@ public class Ifelse {
             } else {
                 System.out.println("number is not divisible by three ..");
             }
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Incorrect input :\n" + e.getMessage());
         }
     }
