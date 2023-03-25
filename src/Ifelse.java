@@ -10,10 +10,19 @@ public class Ifelse {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int a = Integer.parseInt(br.readLine());
         if (a > 0) {
+
             System.out.println("number is positive ..");
-        }else {
+
+        } else {
             System.out.println("number is negative..");
         }
-
+        if (a == 0) {
+            System.out.println("number is zero");
+        }
+        if (a % 3 == 0) {
+            System.out.println("number is divisible by three..");
+        } else {
+            System.out.println("number is not divisible by three ..");
+        }
     }
 }
